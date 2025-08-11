@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — 0niyokai</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script defer src="main.js"></script>
+  <meta name="description" content="Contact et partenariats avec 0niyokai.">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img src="logo.png" alt="Logo 0niyokai" width="44" height="44" loading="lazy" decoding="async">
+      <span>0niyokai</span>
+    </a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <nav class="site-nav" aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="planning.html">Planning</a></li>
+        <li><a href="clips.html">Clips/VOD</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <div class="container">
+    <h1>Contact</h1>
+    <p>Pour une proposition pro, un partenariat ou autre demande, utilisez le formulaire ci‑dessous. Vous pouvez aussi me joindre via Twitch ou les réseaux.</p>
+
+    <form class="contact-form" name="contact" method="post" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact">
+      <div class="grid two">
+        <div class="field">
+          <label for="name">Nom</label>
+          <input id="name" name="name" required autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required autocomplete="email">
+        </div>
+      </div>
+      <div class="field">
+        <label for="subject">Objet</label>
+        <input id="subject" name="subject" required>
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+      </div>
+      <button class="btn primary" type="submit">Envoyer</button>
+    </form>
+
+    <div class="socials">
+      <a class="btn outline" href="https://www.twitch.tv/0niyokai" target="_blank" rel="noopener">Twitch</a>
+      <a class="btn outline" href="https://www.tiktok.com/@0niyoka1" target="_blank" rel="noopener">TikTok</a>
+      <a class="btn outline" href="https://www.instagram.com/0ni.yokai/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> 0niyokai — Tous droits réservés.</p>
+    <p class="muted">Site fan non officiel — design par Ferratix.</p>
+  </div>
+</footer>
+</body>
+</html>

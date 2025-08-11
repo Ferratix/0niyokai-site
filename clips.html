@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clips & VOD — 0niyokai</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script defer src="main.js"></script>
+  <meta name="description" content="Clips et VOD de 0niyokai.">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img src="logo.png" alt="Logo 0niyokai" width="44" height="44" loading="lazy" decoding="async">
+      <span>0niyokai</span>
+    </a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <nav class="site-nav" aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="planning.html">Planning</a></li>
+        <li><a class="active" href="clips.html">Clips/VOD</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <div class="container">
+    <h1>Clips & VOD</h1>
+    <p>Retrouve tous les clips et rediffusions directement sur Twitch.</p>
+
+    <div class="grid cards">
+      <a class="card" href="https://www.twitch.tv/0niyokai/videos?filter=clips&range=all" target="_blank" rel="noopener">
+        <h3>Clips</h3><p>Les meilleurs moments de 0niyokai.</p>
+      </a>
+      <a class="card" href="https://www.twitch.tv/0niyokai/videos" target="_blank" rel="noopener">
+        <h3>VOD</h3><p>Rediffusions de stream.</p>
+      </a>
+    </div>
+
+    <details class="embed-help">
+      <summary>Intégrer le lecteur Twitch (optionnel)</summary>
+      <p>Pour GitHub Pages :</p>
+      <pre><code>&lt;iframe
+  src="https://player.twitch.tv/?channel=0niyokai&amp;parent=ferratix.github.io"
+  height="480" width="856" allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
+    </details>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> 0niyokai — Tous droits réservés.</p>
+    <p class="muted">Site fan non officiel — design par Ferratix.</p>
+  </div>
+</footer>
+</body>
+</html>

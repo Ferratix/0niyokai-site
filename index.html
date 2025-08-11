@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>0niyokai — Twitch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script defer src="main.js"></script>
+  <meta name="description" content="Site du streamer Twitch français 0niyokai : live, clips, planning et contact.">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img src="logo.png" alt="Logo 0niyokai" width="44" height="44" loading="lazy" decoding="async">
+      <span>0niyokai</span>
+    </a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <nav class="site-nav" aria-label="Navigation principale">
+      <ul>
+        <li><a class="active" href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="planning.html">Planning</a></li>
+        <li><a href="clips.html">Clips/VOD</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Bienvenue chez <span class="accent">0niyokai</span></h1>
+        <p>Streamer FR — vibes japonaises, oni, et bonne ambiance. Suis le live, découvre les meilleurs clips et le planning.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#player">Regarder le live</a>
+          <a class="btn outline" href="https://www.twitch.tv/0niyokai" target="_blank" rel="noopener">Suivre sur Twitch</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="oni-mask"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="player" id="player" aria-label="Lecteur Twitch">
+    <div class="container">
+      <div class="player-frame"><noscript>Activez JavaScript pour afficher le lecteur Twitch.</noscript></div>
+      <p class="player-note">Problème d’affichage ? Le domaine doit être autorisé via le paramètre <code>parent</code> (déjà configuré pour ferratix.github.io).</p>
+    </div>
+  </section>
+
+  <section class="highlights">
+    <div class="container">
+      <h2>Moments forts</h2>
+      <div class="grid cards">
+        <a class="card" href="https://www.twitch.tv/0niyokai/videos?filter=clips&range=all" target="_blank" rel="noopener">
+          <h3>Clips</h3><p>Les meilleurs extraits — rage, clutch et memes.</p>
+        </a>
+        <a class="card" href="planning.html">
+          <h3>Planning</h3><p>Ne rate pas les prochains lives (heure de Paris).</p>
+        </a>
+        <a class="card" href="a-propos.html">
+          <h3>À propos</h3><p>Bio, setup, et l’esprit du stream.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> 0niyokai — Tous droits réservés.</p>
+    <p class="muted">Site fan non officiel — design par Ferratix.</p>
+  </div>
+</footer>
+</body>
+</html>

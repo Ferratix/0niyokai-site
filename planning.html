@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Planning — 0niyokai</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script defer src="main.js"></script>
+  <meta name="description" content="Planning des streams de 0niyokai (heure de Paris).">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img src="logo.png" alt="Logo 0niyokai" width="44" height="44" loading="lazy" decoding="async">
+      <span>0niyokai</span>
+    </a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <nav class="site-nav" aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a class="active" href="planning.html">Planning</a></li>
+        <li><a href="clips.html">Clips/VOD</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <div class="container">
+    <h1>Planning</h1>
+    <p class="muted">Heure de Paris (CET/CEST). Planning indicatif — suivez la chaîne pour les annonces de dernière minute.</p>
+
+    <div class="schedule" role="table" aria-label="Planning hebdomadaire">
+      <div class="row head" role="row">
+        <div role="columnheader">Jour</div>
+        <div role="columnheader">Heure</div>
+        <div role="columnheader">Programme</div>
+      </div>
+      <div class="row" role="row"><div>Lundi</div><div>18:00 – 20:00</div><div>Live classique</div></div>
+      <div class="row" role="row"><div>Mardi</div><div>—</div><div>Off</div></div>
+      <div class="row" role="row"><div>Mercredi</div><div>18:00 – 20:00</div><div>Live classique</div></div>
+      <div class="row" role="row"><div>Jeudi</div><div>18:00 – 20:00</div><div>Live classique</div></div>
+      <div class="row" role="row"><div>Vendredi</div><div>20:00 – 00:00/01:00</div><div>Soirée horreur 👻</div></div>
+      <div class="row" role="row"><div>Samedi</div><div>—</div><div>Off</div></div>
+      <div class="row" role="row"><div>Dimanche</div><div>13:00 – 17:00</div><div>Live détente</div></div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> 0niyokai — Tous droits réservés.</p>
+    <p class="muted">Site fan non officiel — design par Ferratix.</p>
+  </div>
+</footer>
+</body>
+</html>
